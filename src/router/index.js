@@ -52,6 +52,10 @@ export default new Router({
     {
       path: "/users",
       name: "users",
+      // beforeEnter: (to, from, next) => {
+      //   // console.log("to", to, "from", from);
+      //   next();
+      // },
       component: Users,
       children: [
         {

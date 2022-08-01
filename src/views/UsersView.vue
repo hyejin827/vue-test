@@ -34,6 +34,15 @@ export default {
       searchId: null,
     };
   },
+  // eslint-disable-next-line no-unused-vars
+  beforeRouteEnter(to, from, next) {
+    console.log("before Enter");
+    next();
+  },
+  // eslint-disable-next-line no-unused-vars
+  beforeRouteLeave(to, from, next) {
+    console.log("before Leave");
+  },
   created() {
     // new Router 속성
     console.log("router", this.$router);
